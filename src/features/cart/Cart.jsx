@@ -10,7 +10,6 @@ function Cart() {
   const username = useSelector((state) => state.user.username);
   const cart = useSelector(getCart);
 
-  console.log(cart);
   if (!cart.length) return <EmptyCart />;
 
   return (

@@ -11,7 +11,6 @@ function MenuItem({ pizza }) {
 
   const currentQuantuty = useSelector(getQuantityById(id));
   const isInCart = currentQuantuty > 0;
-  console.log(currentQuantuty);
 
   function handleAddToCart() {
     const newItem = {
